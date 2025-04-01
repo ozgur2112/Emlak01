@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emlak Sitesi - Sahibinden Benzeri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .search-bar {
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            width: 15%;
+            padding: 8px;
+            font-size: 16px;
+            background-color: #ffcc00;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .property-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .property-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .property-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-item .details {
+            padding: 10px;
+        }
+        .property-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .property-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Emlak Sitesi</h1>
+        <div class="nav-links">
+            <a href="#">Ana Sayfa</a>
+            <a href="#">İlan Ver</a>
+            <a href="#">İletişim</a>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Ne arıyorsunuz? (Örneğin, İstanbul, Satılık Daire)">
+        <button type="button">Ara</button>
+    </div>
+
+    <div class="property-list">
+        <div class="property-item">
+            <img src="https://via.placeholder.com/400x200" alt="Emlak 1">
+            <div class="details">
+                <h3>Satılık Daire - 3+1</h3>
+                <p>İstanbul, Kadıköy</p>
+                <p>1.200.000 TL</p>
+            </div>
+        </div>
+        <div class="property-item">
+            <img src="https://via.placeholder.com/400x200" alt="Emlak 2">
+            <div class="details">
+                <h3>Kiralık Daire - 2+1</h3>
+                <p>İstanbul, Üsküdar</p>
+                <p>5.500 TL/ay</p>
+            </div>
+        </div>
+        <div class="property-item">
+            <img src="https://via.placeholder.com/400x200" alt="Emlak 3">
+            <div class="details">
+                <h3>Satılık Daire - 1+1</h3>
+                <p>İstanbul, Beşiktaş</p>
+                <p>800.000 TL</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Emlak Sitesi | Tüm Hakları Saklıdır</p>
+    </footer>
+
+</body>
+</html>
